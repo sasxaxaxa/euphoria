@@ -1,12 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/layout/Header/Header.jsx";
 import '../src/assets/styles/globals.scss'
 
 function App() {
 
   return (
     <>
-      <h1>Summer value pack</h1>
+      <Router>
+        <Header />
+        <main>
+        </main>
+      </Router>
     </>
   )
 }
+
 
 export default App

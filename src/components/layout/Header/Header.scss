@@ -1,0 +1,33 @@
+.header {
+  &__inner {
+    margin-block: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 76px;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 11px;
+    column-gap: 40px;
+  }
+
+  &__nav-link {
+    font-family: var(--font-family-causten);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--color-gray-2);
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 12px;
+  }
+}
