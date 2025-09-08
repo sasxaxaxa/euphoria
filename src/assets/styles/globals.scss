@@ -13,6 +13,10 @@ body {
   background-color: var(--color-white);
 }
 
+a {
+  color: inherit;
+}
+
 h1, .h1 {
   font-size: 48px;
   font-weight: 700;
