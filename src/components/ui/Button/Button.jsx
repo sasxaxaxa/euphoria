@@ -13,6 +13,9 @@ const Button = (props) => {
   const title = label ? label : ''
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
+  const linkProps = { href }
+  const specificProps = isLink ? linkProps : undefined
+
 
   const iconComponent = icon && (
     <img
@@ -29,6 +32,9 @@ const Button = (props) => {
         `button-${mode}`,
         `button-${location}`
       )}
+      title={title}
+      aria-label={title}
+      {...specificProps}
     >
       {iconComponent}
       {title}
