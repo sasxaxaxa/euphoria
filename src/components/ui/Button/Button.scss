@@ -10,4 +10,18 @@
     width: 44px;
     height: 44px;
   }
+
+  &-transparent {
+    background-color: transparent;
+    color: inherit;
+  }
+
+  &-deals {
+    font-family: var(--font-family-core-sans-c);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 151%;
+
+    border-bottom: 1px solid var(--color-white);
+  }
 }
