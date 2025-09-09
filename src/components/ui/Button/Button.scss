@@ -11,9 +11,9 @@
     height: 44px;
   }
 
-  &-transparent {
+  &-transparent-white {
     background-color: transparent;
-    color: inherit;
+    color: var(--color-white);
   }
 
   &-deals {

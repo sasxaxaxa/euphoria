@@ -1,20 +1,31 @@
 import Button from "../ui/Button/Button.jsx";
 import './CardDeals.scss'
-const CardDeals = () => {
+const CardDeals = (props) => {
+
+  const {
+    prefix,
+    title,
+    description,
+    bg
+  } = props
+
   return (
-    <div className="card-deals">
+    <div
+      className="card-deals"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
       <p className="card-deals__prefix">
-        Low Price
+        {prefix}
       </p>
       <h3 className="card-deals__title">
-        Breezy Summer
-        Style
+        {title}
       </h3>
       <p className="card-deals__description">
-        UPTO 50% OFF
+        {description}
       </p>
       <Button
-        mode='transparent'
+        className='card-deals__button'
+        mode='transparent-white'
         location='deals'
         label='Explore Items'
       />

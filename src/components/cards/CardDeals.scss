@@ -1,14 +1,14 @@
 .card-deals {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: start;
   padding-left: 28px;
   padding-top: 57px;
-  padding-bottom: 80px;
+  padding-bottom: 55px;
 
-  background: url("src/assets/images/cards/deals-bg-1.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 
   border-radius: 12px;
   box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.4);
@@ -32,7 +32,7 @@
     font-weight: 800;
     font-size: 34px;
     line-height: 133%;
-    margin-bottom: 9px;
+    padding-bottom: 10px;
     max-width: 264px;
     text-wrap: wrap;
   }
@@ -42,7 +42,10 @@
     font-size: 16px;
     line-height: 157%;
     letter-spacing: 0.02em;
-    margin-bottom: 42px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
   }
 
 }

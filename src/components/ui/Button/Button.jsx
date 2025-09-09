@@ -3,6 +3,7 @@ import './Button.scss'
 
 const Button = (props) => {
   const {
+    className,
     label,
     mode,
     location,
@@ -24,6 +25,7 @@ const Button = (props) => {
   return (
     <Component
       className={classNames(
+        className,
         'button',
         `button-${mode}`,
         `button-${location}`
